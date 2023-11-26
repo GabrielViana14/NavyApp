@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".login"
+    android:background="@drawable/background_login">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:padding="20dp"
+        android:background="@drawable/layout_branco_redondo"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_tf_login"
+                android:hint="@string/email"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_line_only"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/senha_tf_login"
+                android:hint="@string/senha"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_line_only"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btn_login"
+            android:text="Entrar"
+            android:textSize="24dp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esqueci minha senha"
+            android:textColor="@color/orange"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:icon="@drawable/outline_lock_24"
+            android:tint="@color/orange"/>
+
+
+        <Button
+            android:id="@+id/btn_cadastro"
+            android:text="Cadastra-se"
+            android:backgroundTint="@color/purple"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:gravity="bottom">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/logo_branco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

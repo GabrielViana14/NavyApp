@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:id="@+id/home_icon"
+        android:icon="@drawable/outline_home_24"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Mapa"
+        android:id="@+id/mapa_icon"
+        android:icon="@drawable/outline_map_24"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Pesquisa"
+        android:id="@+id/pesquisa_icon"
+        android:icon="@drawable/outline_search_24"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Opções"
+        android:id="@+id/conta_icon"
+        android:icon="@drawable/outline_account_circle_24"/>
+</menu>

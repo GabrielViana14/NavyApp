@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".opcoes">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_detalhe_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/logo_branco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/opcoes_imagem_usuario"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/carro_exemplo"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CircularImageView"/>
+
+    <TextView
+        android:id="@+id/opcoes_nome_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="72dp"
+        android:text="Carro carroso da silva"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/opcoes_email_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="97dp"
+        android:text="Carro carroso da silva"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Geral"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="10dp"/>
+            <Button
+                android:id="@+id/opcoes_btn_editar_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Editar Perfil"
+                android:textSize="18sp"
+                android:gravity="left|center_vertical"
+                android:textAlignment="gravity"
+                android:textColor="@color/dark_gray"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:drawableTint="@color/black"/>
+            <Button
+                android:id="@+id/opcoes_btn_senha_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mudar Senha"
+                android:textSize="18sp"
+                android:gravity="left|center_vertical"
+                android:textAlignment="gravity"
+                android:textColor="@color/dark_gray"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:drawableTint="@color/black"/>
+            <Button
+                android:id="@+id/opcoes_btn_logout_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sair da conta"
+                android:textSize="18sp"
+                android:gravity="left|center_vertical"
+                android:textAlignment="gravity"
+                android:textColor="@color/dark_gray"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:drawableTint="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Frota"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="10dp"/>
+            <Button
+                android:id="@+id/opcoes_btn_carro_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cadastrar Carro"
+                android:textSize="18sp"
+                android:gravity="left|center_vertical"
+                android:textAlignment="gravity"
+                android:textColor="@color/dark_gray"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:drawableTint="@color/black"/>
+            <Button
+                android:id="@+id/opcoes_btn_filial_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cadastrar Filial"
+                android:textSize="18sp"
+                android:gravity="left|center_vertical"
+                android:textAlignment="gravity"
+                android:textColor="@color/dark_gray"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:drawableTint="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Pagamento"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="10dp"/>
+            <Button
+                android:id="@+id/opcoes_btn_pagamento_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cadastrar formas de pagamentos"
+                android:textSize="18sp"
+                android:gravity="left|center_vertical"
+                android:textAlignment="gravity"
+                android:textColor="@color/dark_gray"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:drawableTint="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sobre e Termos"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="10dp"/>
+            <Button
+                android:id="@+id/opcoes_btn_sobre_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sobre a Empresa"
+                android:textSize="18sp"
+                android:gravity="left|center_vertical"
+                android:textAlignment="gravity"
+                android:textColor="@color/dark_gray"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:drawableTint="@color/black"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

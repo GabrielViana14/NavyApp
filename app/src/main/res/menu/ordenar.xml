@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ordenar_opcao1"
+        android:title="Por preço mais caro"
+        />
+    <item
+        android:id="@+id/ordenar_opcao2"
+        android:title="Por preço mais barato"
+        />
+    <item
+        android:id="@+id/ordenar_opcao3"
+        android:title="Por modelo"
+        />
+    <item
+        android:id="@+id/ordenar_opcao4"
+        android:title="Por marca"
+        />
+</menu>

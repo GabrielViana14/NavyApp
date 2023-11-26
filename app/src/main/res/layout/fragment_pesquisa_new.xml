@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/salmao"
+    tools:context=".PesquisaNew"
+    android:paddingHorizontal="10dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pesquisa_tf_ordenar"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:drawableEnd="@drawable/pesquisa_icon"
+            android:hint="Pesquise por marca ou modelo"
+            app:boxStrokeColor="@color/red"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pesquisa_btn_ordenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="Ordernar"
+        android:textColor="@color/red"
+        app:cornerRadius="10dp"
+        android:elevation="10dp"
+        app:strokeWidth="0.7dp"
+        app:strokeColor="@color/red"
+        app:icon="@drawable/order"
+        app:iconTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="565dp"
+        android:layout_marginTop="68dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pesquisa_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:overScrollMode="never"
+            android:scrollbars="horizontal"
+            android:clipToPadding="false"
+            tools:listitem="@layout/home_list_item"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

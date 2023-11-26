@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "428810569718",
+    "firebase_url": "https://projeto-fatec-locadora-default-rtdb.firebaseio.com",
+    "project_id": "projeto-fatec-locadora",
+    "storage_bucket": "projeto-fatec-locadora.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428810569718:android:ef25ff68bb6e437afba9d7",
+        "android_client_info": {
+          "package_name": "com.fatec_gab_viana.navy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428810569718-02fhp72rqa4tm60605d5ammgf9h6c6mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW9Q2b-WU-wO6zMGII-uNyVQTFfPEr52E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428810569718-02fhp72rqa4tm60605d5ammgf9h6c6mi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
